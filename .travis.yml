@@ -4,6 +4,8 @@ jdk:
   - openjdk8
 
 script:
+  - chmod +x ./mvnw
+  - ./mvnw -version
   - ./mvnw test
   - ./mvnw clean package -P full
 
